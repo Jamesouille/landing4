@@ -1,0 +1,80 @@
+/* Style général */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.category {
+    width: 80%;
+    max-width: 600px;
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.category h2 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.category p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .category {
+        width: 90%;
+    }
+}
+
+/* Section Ouvertures */
+.openings-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.opening {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    transition: transform 0.2s;
+}
+
+.opening img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 8px;
+}
+
+.opening p {
+    font-size: 1em;
+    font-weight: bold;
+    color: #333;
+}
+
+.opening:hover {
+    transform: scale(1.05);
